@@ -92,7 +92,7 @@ dissector_table:add(""{0}.{1}"", current_protocol)
             { Data.InType.GUID, new Tuple<string, string, string>("ProtoField.guid", "base.DEC", string.Format(EVENT_FIELD_DECLARATION_SIMPLE, 16)) },
             { Data.InType.UnicodeString, new Tuple<string, string, string>("ProtoField.string", "base.UNICODE", EVENT_FIELD_DECLARATION_UZSTRING) },
             { Data.InType.AnsiString, new Tuple<string, string, string>("ProtoField.string", "base.ASCII", EVENT_FIELD_DECLARATION_ANSISTRING) },
-            { Data.InType.Boolean, new Tuple<string, string, string>("ProtoField.int8", "base.DEC", string.Format(EVENT_FIELD_DECLARATION_WITH_VALUE, 1,"le_uint")) },
+            { Data.InType.Boolean, new Tuple<string, string, string>("ProtoField.int32", "base.DEC", string.Format(EVENT_FIELD_DECLARATION_WITH_VALUE, 4,"le_uint")) },
             { Data.InType.Double, new Tuple<string, string, string>("ProtoField.double", "base.DEC", string.Format(EVENT_FIELD_DECLARATION_WITH_VALUE, 8, "le_float")) },
             { Data.InType.HexInt32, new Tuple<string, string, string>("ProtoField.int32", "base.DEC", string.Format(EVENT_FIELD_DECLARATION_WITH_VALUE, 4, "le_int")) },
             { Data.InType.HexInt64, new Tuple<string, string, string>("ProtoField.int64", "base.DEC", string.Format(EVENT_FIELD_DECLARATION_WITH_VALUE, 8, "le_int64")) },
